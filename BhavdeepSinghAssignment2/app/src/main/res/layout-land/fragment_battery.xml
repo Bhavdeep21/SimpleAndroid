@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".main.battery"
+    android:background="@drawable/linear_gradient_background">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="450sp"
+            android:layout_height="match_parent"
+            app:lottie_rawRes="@raw/battery_android"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:id="@+id/battanim"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/battery"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:layout_centerVertical="true"
+            android:ems="4"
+            android:layout_toRightOf="@id/battanim"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+</FrameLayout>

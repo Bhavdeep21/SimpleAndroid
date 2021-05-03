@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".main.Button"
+    android:background="@drawable/linear_gradient_background"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+            <com.google.android.material.button.MaterialButton
+                android:layout_marginTop="70sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/home"
+                android:layout_marginLeft="2sp"
+                android:layout_marginRight="2sp"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_centerHorizontal="true"
+                android:text="Home"
+                android:textColor="@color/white"
+                android:ems="8"
+                android:backgroundTint="@color/button_tint"
+                app:rippleColor="@color/white"
+                android:textSize="16sp"
+                android:shadowColor="@color/white"
+                app:strokeColor="@color/white"
+                android:textAllCaps="false"/>
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/register"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_centerHorizontal="true"
+                android:text="Register"
+                android:layout_marginLeft="2sp"
+                android:layout_marginRight="2sp"
+                android:textColor="@color/white"
+                android:ems="8"
+                app:rippleColor="@color/white"
+                android:textSize="16sp"
+                android:shadowColor="@color/white"
+                app:strokeColor="@color/white"
+                android:textAllCaps="false" />
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/battery"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_centerHorizontal="true"
+                android:text="Battery"
+                android:layout_marginLeft="2sp"
+                android:layout_marginRight="2sp"
+                android:textColor="@color/white"
+                android:ems="8"
+                app:rippleColor="@color/white"
+                android:textSize="16sp"
+                android:shadowColor="@color/white"
+                app:strokeColor="@color/white"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.register"
+    android:background="@drawable/linear_gradient_background">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:src="@drawable/ic_launcher_foreground"
+            android:layout_centerHorizontal="true"
+            app:tint="#3DDC84" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/imageView">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/outlinedTextField"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                app:suffixTextColor="@color/white"
+                android:outlineSpotShadowColor="@color/white"
+                android:outlineAmbientShadowColor="@color/white"
+                app:hintTextColor="@color/white"
+                android:textColorHint="@color/white"
+                app:boxStrokeColor="@color/white"
+                android:layout_centerHorizontal="true"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/white"
+                android:layout_marginTop="10sp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="20"
+                    android:id="@+id/email"
+                    android:inputType="textEmailAddress"
+                    android:outlineAmbientShadowColor="@color/white"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:shadowColor="@color/white" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/outlinedTextField2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="User Name"
+                app:suffixTextColor="@color/white"
+                android:outlineSpotShadowColor="@color/white"
+                android:outlineAmbientShadowColor="@color/white"
+                app:hintTextColor="@color/white"
+                android:textColorHint="@color/white"
+                android:layout_below="@id/outlinedTextField"
+                app:boxStrokeColor="@color/white"
+                android:layout_centerHorizontal="true"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/white"
+                android:layout_marginTop="10sp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="20"
+                    android:id="@+id/username"
+                    android:inputType="textPersonName"
+                    android:outlineAmbientShadowColor="@color/white"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:shadowColor="@color/white" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/outlinedTextField3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                app:suffixTextColor="@color/white"
+                android:outlineSpotShadowColor="@color/white"
+                android:outlineAmbientShadowColor="@color/white"
+                app:hintTextColor="@color/white"
+                android:textColorHint="@color/white"
+                android:layout_below="@id/outlinedTextField2"
+                app:boxStrokeColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10sp"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleDrawable="@drawable/ic_baseline_remove_red_eye_24"
+                app:passwordToggleTint="@color/white"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="20"
+                    android:inputType="textPassword"
+                    android:id="@+id/password"
+                    android:outlineAmbientShadowColor="@color/white"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:shadowColor="@color/white" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/outlinedTextField4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Retype Password"
+                app:suffixTextColor="@color/white"
+                android:outlineSpotShadowColor="@color/white"
+                android:outlineAmbientShadowColor="@color/white"
+                app:hintTextColor="@color/white"
+                android:textColorHint="@color/white"
+                android:layout_below="@id/outlinedTextField3"
+                app:boxStrokeColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10sp"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleDrawable="@drawable/ic_baseline_remove_red_eye_24"
+                app:passwordToggleTint="@color/white"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="20"
+                    android:inputType="textPassword"
+                    android:id="@+id/retype_password"
+                    android:outlineAmbientShadowColor="@color/white"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:shadowColor="@color/white" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/register"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_centerHorizontal="true"
+                android:text="Register"
+                android:layout_marginLeft="0sp"
+                android:textColor="@color/white"
+                android:ems="10"
+                app:rippleColor="@color/white"
+                android:textSize="16sp"
+                android:shadowColor="@color/white"
+                app:strokeColor="@color/white"
+                android:textAllCaps="false"
+                android:layout_marginTop="20sp"
+                android:backgroundTint="#37FFFFFF"
+                android:layout_below="@id/outlinedTextField4"
+                android:drawableLeft="@drawable/ic_baseline_add_circle_outline_24"/>
+            </RelativeLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+</FrameLayout>
